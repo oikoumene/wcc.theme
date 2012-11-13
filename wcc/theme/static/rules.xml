@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="index.html" css:if-content="#visual-portal-wrapper"/>
+    <theme href="dialog.html" css:if-content="#content.dialog-wrapper"/>
+    <replace css:theme="title" css:content="title"/>
+    <merge theme="/html" content="/html" attributes="lang"/>
+
+    <rules css:if-content="#content.dialog-wrapper">
+        <prepend theme="/html/head" 
+            content="/html/head/base | /html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
+        <replace theme="/html/body" content="/html/body"/>
+        <merge theme="/html/body" content="/html/body" attributes="class"/>
+        <merge theme="/html/body" content="/html/body" attributes="dir"/>
+    </rules>
+
+
+    <rules css:if-content="#visual-portal-wrapper" >
+        <prepend theme="/html/head"
+            content="/html/head/base | /html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
+        <merge theme="/html/body" content="/html/body" attributes="class"/>
+        <merge theme="/html/body" content="/html/body" attributes="dir"/>
+        <replace css:theme="#site-analytics" css:content="#plone-analytics"/>
+    </rules>
+</rules>
