@@ -25,5 +25,13 @@
         <merge theme="/html/body" content="/html/body" attributes="class"/>
         <merge theme="/html/body" content="/html/body" attributes="dir"/>
         <replace css:theme="#site-analytics" css:content="#plone-analytics"/>
+        <replace css:theme="#portal-personaltools-wrapper" 
+            css:content="#portal-personaltools-wrapper"/>
+        <replace css:theme-children="#portal-column-content" 
+                 css:content-children="#portal-column-content"/>
+        <replace css:theme-children="#portal-column-one" 
+                css:content-children="#portal-column-one"
+                css:if-content="#portal-column-one"/>
+        <replace css:theme="#portal-logo" css:content="#portal-logo"/>
     </rules>
 </rules>
