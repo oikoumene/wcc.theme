@@ -28,3 +28,37 @@ ul.navTreeLevel1 {
     color:#555 !important;
     font-weight:normal;
 }
+#portlets-below .portletHeader {
+
+    font-size: 14px;
+    color: #221B1B;
+    font-family: Verdana, Helvetica, Arial, sans-serif; 
+    border-top: none;
+}
+#portlets-below .portletItem a {
+
+    color: rgb(187, 0, 17);
+    font-size: 14px;
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    border-bottom: none;
+}
+#portlets-below .portletItem a:hover {
+
+    text-decoration: underline;
+}
+#portlets-below .portletItem p {
+
+    color: rgb(85, 85 85);
+    font-size: 0.8571em;
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#portlets-below .cell.BelowPortletManager2{
+
+border:solid 10px #DDD;
+border-width: 0 1px;
+}
+
