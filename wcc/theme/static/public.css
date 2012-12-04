@@ -30,7 +30,7 @@ iframe { border-width: 0; border-style:none; }
 /* @group Basics */
 
 body {
-    font: 100% Arial, FreeSans, sans-serif;
+    font: 100% Verdana,Helvetica,Arial,sans-serif;
     background: White;
     color: Black;
     /* width: 58em; margin: 1em auto; */

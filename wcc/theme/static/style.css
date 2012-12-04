@@ -4,6 +4,10 @@
     border-top:8px solid #b01;
 }
 
+#content-core {
+    font-size:14px;
+}
+
 ul.navTreeLevel0 {
     font: bold 18px Corbel, Frutiger, "Frutiger 45", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif /* 18px */;
 }
