@@ -69,3 +69,15 @@ border-width: 0 1px;
 .gmnoprint {
     display:none;
 }
+
+#content-core a, a:hover {
+    color:#B01 !important;
+}
+#content-core h3, h4, th, b{
+
+    font-family:Corbel, Frutiger, 'Frutiger 45', 'Lucida Sans Unicode', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+
