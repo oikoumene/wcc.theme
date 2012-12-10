@@ -80,4 +80,9 @@ border-width: 0 1px;
     color: black;
 }
 
+.section-front-page #portal-breadcrumbs {
+
+    display: none;
+}
+
 
