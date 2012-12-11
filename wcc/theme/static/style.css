@@ -70,3 +70,14 @@ border-width: 0 1px;
     display:none;
 }
 
+#content-core h3, h4, th, b{
+
+    font-family:Corbel, Frutiger, 'Frutiger 45', 'Lucida Sans Unicode', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.section-front-page #portal-breadcrumbs {
+
+    display: none;
+}
