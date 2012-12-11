@@ -36,8 +36,12 @@ body {
     /* width: 58em; margin: 1em auto; */
 }
 
+#content-core {
+    font-size:14px;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+    font-family: Corbel, Frutiger, 'Frutiger 45', 'Lucida Sans Unicode', Verdana, "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-weight: bold;
     color: Black;
     line-height: 1.5em;
@@ -55,13 +59,13 @@ h3 {
     font-size: 1.25em;
 }
 h4 {
-    font-size: 1.25em;
-}
-h5 {
     font-size: 1em;
 }
-h6 {
+h5 {
     font-size: 0.8em;
+}
+h6 {
+    font-size: 0.6em;
 }
 h2, h3, h4, h5, h6 {
     color: #444;
@@ -74,7 +78,7 @@ p {
 }
 
 a:link, a:visited {
-    color: #205c90;
+    color: #BB0011;
 }
 a:focus img {
     outline: thin dotted;
@@ -133,12 +137,12 @@ q {
 
 #portal-globalnav .selected a,
 #portal-globalnav a:hover {
-    background: #205c90;
+    background: #BB0011;
     color: White;
 }
 #portal-globalnav .selected a:hover {
     background: #ddd;
-    color: #205c90;
+    color: #BB0011;
 }
 
 #portal-personaltools {
@@ -317,7 +321,7 @@ a.link-anchor {
     cursor: default !important;
 }
 #content a.link-overlay {
-    border-bottom: 1px dotted #205c90 !important;
+    border-bottom: 1px dotted #BB0011 !important;
 }
 
 dl dt .documentByLine {
@@ -494,13 +498,13 @@ dl.portlet {
 
 #content a:link,
 dl.portlet a:link {
-    color: #205c90;
+    color: #BB0011;
     border-bottom: 0.1em solid #ccc;
 }
 
 #content a:visited,
 dl.portlet a:visited {
-    color: #427597;
+    color: #BB0011;
     border-bottom: 0.1em solid #ccc;
 }
 #content a:hover,
@@ -531,9 +535,9 @@ dl.portlet a:hover {
     -moz-border-radius: 0.5em;
 }
 #category a.link-category:hover {
-    background: #205c90;
+    background: #BB0011;
     color: White;
-    border-color: #205c90;
+    border-color: #BB0011;
 }
 #category .separator {
     display: none;
@@ -1033,7 +1037,7 @@ div.field span.required:after {
     padding: 0 0.75em;
 }
 #portal-personaltools dd a:hover {
-    background: #205c90;
+    background: #BB0011;
     color: White;
 }
 
