@@ -81,3 +81,26 @@ border-width: 0 1px;
 
     display: none;
 }
+
+li .contenttype-wcc-churches-region span{
+
+    margin-left: 15px;
+
+}
+
+li .contenttype-wcc-churches-country span {
+
+    margin-left: 25px;
+
+}
+
+li .contenttype-wcc-churches-churchbody span {
+
+    margin-left: 25px;                    
+    
+}
+    
+li .contenttype-wcc-churches-churchmember span{
+
+margin-left: 35px;
+}
