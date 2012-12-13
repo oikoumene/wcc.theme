@@ -20,6 +20,10 @@
 
 
     <rules css:if-content="#visual-portal-wrapper" >
+        <drop css:theme="#portal-column-content" attributes="class" 
+            css:if-not-content="#portal-column-two"/>
+        <drop css:theme="#portal-column-two" css:if-not-content="#portal-column-two"/>
+
         <prepend theme="/html/head"
             content="/html/head/base | /html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
         <merge theme="/html/body" content="/html/body" attributes="class"/>
@@ -32,6 +36,9 @@
         <replace css:theme-children="#portal-column-one" 
                 css:content-children="#portal-column-one"
                 css:if-content="#portal-column-one"/>
+        <replace css:theme-children="#portal-column-two" 
+                css:content-children="#portal-column-two"
+                css:if-content="#portal-column-two"/>
         <replace css:theme="#portal-logo" css:content="#portal-logo"/>
     </rules>
 </rules>

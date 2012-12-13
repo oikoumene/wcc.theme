@@ -493,19 +493,19 @@ dl.portlet {
 
 #content ul,
 #content ol {
-
+    margin-bottom:5px;
 }
 
 #content a:link,
 dl.portlet a:link {
     color: #BB0011;
-    border-bottom: 0.1em solid #ccc;
+    border-bottom: 0.1em solid #BB0000;
 }
 
 #content a:visited,
 dl.portlet a:visited {
     color: #BB0011;
-    border-bottom: 0.1em solid #ccc;
+    border-bottom: 0.1em solid #BB0000;
 }
 #content a:hover,
 dl.portlet a:hover {
