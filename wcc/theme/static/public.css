@@ -117,8 +117,8 @@ q {
 
 #portal-globalnav {
     clear: both;
-    font-size: 80%;
-    background: #ddd;
+    font-size: 120%;
+    background: #949494;
     /* ensure top navigation dont touches portlets, content etc.. #10491 */
     margin: 0 0 1em 0;
 }
@@ -126,18 +126,20 @@ q {
 }
 #portal-globalnav li a {
     display: inline-block;
-    padding: 0.5em 1em 2em 1em;
-    background: #ddd;
+    padding: 10px;
+    background: #949494;
     min-width: 6em;
     white-space: normal;
+    color: #000;
     /*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
     /*border-bottom: 0.1em solid White;*/
     border-right: 0.1em solid white;
+    font-weight:bolder;
 }
 
 #portal-globalnav .selected a,
 #portal-globalnav a:hover {
-    background: #BB0011;
+    background: #000;
     color: White;
 }
 #portal-globalnav .selected a:hover {
