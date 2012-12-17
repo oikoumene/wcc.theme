@@ -104,3 +104,51 @@ li .contenttype-wcc-churches-churchmember span{
 
 margin-left: 35px;
 }
+
+.carousel div.navi {
+    margin:0px auto;
+    padding-left:20px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    text-align:left;
+    position:absolute;
+    top:260px;
+    right:50px;
+    z-index:5;
+}
+
+
+.carousel div.navi a {
+    background: #67D0DC;
+    height:13px;
+    width:13px;
+    border-radius: 8px;
+    border:1px solid #247380;
+}
+
+.carousel div.navi a.active {
+    background: #BEDA5C;
+    height:13px;
+    width:13px;
+    border-radius: 8px;
+    border:1px solid #247380;
+}
+
+.carousel a.browse {
+    display:none;
+}
+
+
+.carousel div.scrollable div.items div.itemPadding {
+        margin: 3px 1em;
+}
+
+.slider-background {
+    position:absolute;
+    background:url('sliderbg.png') no-repeat right;
+    display:block;
+    height:300px;
+    width:640px;
+    margin:0 0.8em;
+}
+
