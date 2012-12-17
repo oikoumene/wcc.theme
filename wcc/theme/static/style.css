@@ -105,6 +105,10 @@ li .contenttype-wcc-churches-churchmember span{
 margin-left: 35px;
 }
 
+.carousel {
+    width: 640px;
+}
+
 .carousel div.navi {
     margin:0px auto;
     padding-left:20px;
