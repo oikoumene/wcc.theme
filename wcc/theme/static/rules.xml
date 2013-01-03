@@ -42,4 +42,18 @@
                 css:if-content="#portal-column-two"/>
         <replace css:theme="#portal-logo" css:content="#portal-logo"/>
     </rules>
+
+
+    <rules css:if-content=".section-front-page">
+        <drop css:content="#content"/>
+        <replace css:content="#portlets-below">
+            <div class="cell BelowPortletManager1 width-3:4 position-0">
+                <xsl:copy-of css:select=".BelowPortletManager1 > *"/>
+            </div>
+            <div class="cell BelowPortletManager2 width-1:4 position-3:4">
+                <xsl:copy-of css:select=".BelowPortletManager2 > *"/>
+            </div>
+
+        </replace>
+    </rules>
 </rules>
