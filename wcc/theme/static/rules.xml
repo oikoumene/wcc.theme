@@ -44,7 +44,7 @@
     </rules>
 
 
-    <rules css:if-content=".section-front-page">
+    <rules css:if-content=".section-front-page.template-document_view">
         <drop css:content="#content"/>
         <replace css:content="#portlets-below">
             <div class="cell BelowPortletManager1 width-3:4 position-0">
