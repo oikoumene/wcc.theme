@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal">
+    <head>
+    </head>
+    <body style="font:100% Verdana, Arial, Helvetica, sans-serif;line-height:1.2857em;"
+        tal:define="portal context/@@plone_portal_state/portal;">
+        <div style="font:83%/1.2857em Verdana, Arial, Helvetica, sans-serif;background:#666666;margin:0;padding:0;text-align:center;color:#221b1b;background-color:#fff;line-height:1.2857em;">
+            <div style="width:647px;background:#FFFFFF;margin:0 auto;border:thin solid #ddd;text-align:left;">
+                <div>
+                    <a tal:attributes="href portal/absolute_url" 
+                        title="World Council of Churches" 
+                        target="_self" style="color:#b01;text-decoration:none;">
+                        <img tal:attributes="src string:${context/absolute_url}/++resource++wcc.theme/blackbar.gif" 
+                             height="98" border="0" alt="World Council of Churches" title="World Council of Churches" style="border:none;"></a></div>
+                    <div style="font-size:0.9em;line-height:32px;font-weight:bold;color:#AAAAAA;padding:0 20px 10px 20px;float:right;">media@wcc-coe.org</div>
+                    <div style="font-size:0.9em;line-height:32px;font-weight:bold;color:#AAAAAA;padding:0 20px 10px 20px;">Contact: +41 79 507 6363</div>
+                    <div style="padding: 25px 20px 0 20px;
+                        border-top: #999966 solid 3px;">
+                        <!--TYPO3SEARCH_begin--><a name="c8851" style="color:#b01;text-decoration:none;"></a><div>
+                            <div style="list-style:none;">
+                                <h1 style="color:#221b1b;font-size:1.65em;line-height:1.2em;"
+                                    tal:content="context/Title">Brazilian youth advocate for peace in Palestine at WSF</h1>
+                                <div style="display:block;
+                                    font-size: 0.8571em ; line-height:1.5em; color:#555;">
+                                    <span>For immediate release: <span tal:content="view/date">12 December 2012</span></span>
+                                    <div style="float:left; border:thin dotted #DDDDDD; margin:1.5em 1em 0 0; padding:0.5em;"
+                                        tal:condition="context/getImage|nothing">
+                                        <a href="#"
+                                            tal:define="here_url context/@@plone_context_state/object_url;"
+                                            tal:attributes="href string:$here_url/image/image_view_fullscreen">
+                                            <img tal:replace="structure python: context.tag(scale='mini', css_class='newsImage')" src="" alt="" />
+                                        </a>
+                                    <span style="width:180px;font-size:0.8em;display:block;margin:0.8em 0 0.1em;line-height:1.3em;"
+                                        tal:content="context/imageCaption">Erico Loyola, former EAPPI volunteer, with Manuel Quintero, the EAPPI coordinator, at the World Social Forum in Porto Alegre, Brazil.</span>
+                                    </div>
+                                    <div> <p style="font-size:1em;margin-bottom:0;margin:0 0 0.8em 0;"></p>
+                                        <p style="font-size:1em;margin-bottom:0;">
+                                            <i>By <span tal:replace="context/Creator">Marcelo Schneider (*)</span></i>
+                                        </p>
+                                        <p style="font-size:1em;margin-bottom:0;">
+                                            <b tal:content="context/Description">At the World Social Forum (WSF) Free Palestine, young ecumenists from Brazil made their presence felt while advocating for peace in the Holy Land. </b>
+                                        </p>
+                                        <div tal:content="structure context/getText"></div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a name="c30006" style="color:#b01;text-decoration:none;"></a><div>
+                                        <div style="font-size:0.8em;"></div>
+                                        <a name="c29934" style="color:#b01;text-decoration:none;"></a><div><div>
+                                                <p style="font-size:1em;"></p>
+                                                <hr>
+                                                    <span style="font-size:0.8em;">The World Council of Churches promotes Christian unity in faith, witness and service for a just and peaceful world. An ecumenical fellowship of churches founded in 1948, today the WCC brings together 349 Protestant, Orthodox, Anglican and other churches representing more than 560 million Christians in over 110 countries, and works cooperatively with the Roman Catholic Church. The WCC general secretary is Rev. Dr Olav Fykse Tveit, from the [Lutheran] Church of Norway. Headquarters: Geneva, Switzerland.</span><br>
+                                                </div></div>
+                                            </div>
+</div>
+<div style="padding:12px 20px;border-top:#999966 solid 3px;font-size:0.8em;margin-top:2em;"></div>
+<!-- end #container -->
+  </div>
+</div>
+</body>
+</html>
