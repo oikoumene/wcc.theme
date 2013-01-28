@@ -10,7 +10,7 @@
      id="wcc-theme-scheme.css"
      expression="python: request.get('HTTP_X_THEME_ENABLED', None)"
      media="screen" rel="stylesheet" rendering="link"
-     cacheable="True" compression="safe" cookable="True"
+     cacheable="False" compression="safe" cookable="True"
      enabled="1"
      insert-after="public.css"/>
 

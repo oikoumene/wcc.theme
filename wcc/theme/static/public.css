@@ -118,8 +118,10 @@ q {
     background: #949494;
     /* ensure top navigation dont touches portlets, content etc.. #10491 */
     margin: 0 0 1em 0;
+    text-align:right;
 }
 #portal-globalnav li {
+    text-align:left;
 }
 #portal-globalnav li a {
     display: inline-block;
@@ -130,7 +132,7 @@ q {
     color: #000;
     /*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
     /*border-bottom: 0.1em solid White;*/
-    border-right: 0.1em solid white;
+    border-left: 0.1em solid white;
     font-weight:bolder;
 }
 
