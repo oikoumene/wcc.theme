@@ -1,0 +1,25 @@
+#visual-portal-wrapper {
+    border-top: 8px solid #b01;
+}
+
+a:link, a:visited {
+    color: #BB0011;
+}
+
+a.navTreeCurrentItem, a.navTreeCurrentItem:visited {
+    color: #B01 !important;
+}
+
+#content a:link, dl.portlet a:link {
+    color: #BB0011;
+    border-bottom: 0.1em solid #BB0000;
+}
+
+#content a:visited, dl.portlet a:visited {
+    color: #BB0011;
+    border-bottom: 0.1em solid #BB0000;
+}
+
+#content a:hover, dl.portlet a:hover {
+    color: #B01 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
+}

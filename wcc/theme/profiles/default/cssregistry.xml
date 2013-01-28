@@ -6,5 +6,12 @@
      expression="python: (not request.get('HTTP_X_THEME_ENABLED', None)) or '@@theming-controlpanel' in request.getURL()"
      id="public.css"
      />
+ <stylesheet
+     id="wcc-theme-scheme.css"
+     expression="python: request.get('HTTP_X_THEME_ENABLED', None)"
+     media="screen" rel="stylesheet" rendering="link"
+     cacheable="True" compression="safe" cookable="True"
+     enabled="1"
+     insert-after="public.css"/>
 
 </object>
