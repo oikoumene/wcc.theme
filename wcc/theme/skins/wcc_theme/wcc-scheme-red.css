@@ -23,3 +23,8 @@ a.navTreeCurrentItem, a.navTreeCurrentItem:visited {
 #content a:hover, dl.portlet a:hover {
     color: #B01 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
+
+div.donate-now-portlet a {
+    background: #B01 !important;
+}   
+

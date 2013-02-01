@@ -98,3 +98,17 @@ li .contenttype-wcc-churches-churchmember span{
 
 margin-left: 35px;
 }
+
+div.donate-now-portlet a {
+    font-size: 25px;
+    text-align:center;
+    padding:10px;
+    background: #aaa;
+    display:block;
+}
+
+div.donate-now-portlet a,
+div.donate-now-portlet a:visited,
+div.donate-now-portlet a:link {
+    color:#fff
+}

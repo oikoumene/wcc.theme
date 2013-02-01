@@ -29,3 +29,6 @@ a.navTreeCurrentItem, a.navTreeCurrentItem:visited {
     color: #FFFFFF !important;
 }
 
+div.donate-now-portlet a {
+    background: #0534B6 !important;
+}
