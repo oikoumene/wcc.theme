@@ -32,6 +32,7 @@
         <replace css:theme="#site-analytics" css:content="#plone-analytics"/>
         <replace css:theme="#portal-personaltools-wrapper" 
             css:content="#portal-personaltools-wrapper"/>
+        <replace css:theme="#portal-languageselector" css:content="#portal-languageselector"/>
         <replace css:theme-children="#portal-column-content" 
                  css:content-children="#portal-column-content"/>
         <replace css:theme-children="#portal-column-one" 
