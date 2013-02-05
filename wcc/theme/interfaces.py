@@ -5,3 +5,6 @@ class IThemeSettings(Interface):
     scheme = schema.Choice(title=u"Color scheme",
             vocabulary="wcc.theme.colorscheme",
             default='red')
+
+class IThemeSpecific(Interface):
+    pass

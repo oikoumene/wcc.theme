@@ -6,6 +6,7 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:grok="http://namespaces.zope.org/grok"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="wcc.theme">
 
     <includeDependencies package="." />
@@ -22,5 +23,10 @@
         />
 
     <cmf:registerDirectory name="wcc_theme"/>
+
+    <browser:jbot
+        directory="jbot"
+        layer=".interfaces.IThemeSpecific" />
+
 
 </configure>
