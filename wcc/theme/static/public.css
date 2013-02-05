@@ -172,7 +172,6 @@ q {
     position: absolute;
     top: 50px;
     right: 1px;
-    z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
     padding: 0.25em 0.5em;
     font-size: 80%;
     max-width: 50%;
