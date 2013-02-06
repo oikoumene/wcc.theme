@@ -11,6 +11,10 @@ ul.navTreeLevel0 {
     font: bold 18px Corbel, Frutiger, "Frutiger 45", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif /* 18px */;
 }
 
+ul.navTreeLevel2, ul.navTreeLevel3 {
+    padding-left:1em;
+}
+
 dl.portlet ul.navTree li a,
 dl.portlet ul.navTree li a:visited {
     color: #000;
