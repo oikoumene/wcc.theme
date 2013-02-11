@@ -4,7 +4,7 @@ Changelog
 1.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added special structure for frontpage's belowcontent portlets (re #183) [izhar]
 
 
 1.5 (2013-02-07)
