@@ -49,5 +49,21 @@
         <replace css:content="#content">
             <div class="visualClear"></div>
         </replace>
+        <replace css:content="#portlets-below">
+            <div id="portlets-below">
+                <div class="BelowPortletManager1">
+                    <xsl:copy-of css:select=".BelowPortletManager1 > *"/>
+                    <div class="visualClear"></div>
+                </div>
+                <div class="row">
+                    <div class="BelowPortletManager2 cell width-2:3 position-0">
+                        <xsl:copy-of css:select=".BelowPortletManager2 > *"/>
+                    </div>
+                    <div class="BelowPortletManager3 cell width-1:3 position-2:3">
+                        <xsl:copy-of css:select=".BelowPortletManager3 > *"/>
+                    </div>
+                </div>
+            </div>
+        </replace>
     </rules>
 </rules>
