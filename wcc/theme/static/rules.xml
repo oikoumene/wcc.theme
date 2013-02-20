@@ -24,10 +24,14 @@
             css:if-not-content="#portal-column-two"/>
         <drop css:theme="#portal-column-two" css:if-not-content="#portal-column-two"/>
 
+
         <prepend theme="/html/head"
             content="/html/head/base | /html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
         <merge theme="/html/body" content="/html/body" attributes="class"/>
         <merge theme="/html/body" content="/html/body" attributes="dir"/>
+        <replace css:content=".portletSearch .searchButton">
+            <input class="searchButton" type="submit" value=" "/>
+        </replace>
         <replace css:theme="#portal-globalnav" css:content="#portal-globalnav"/>
         <replace css:theme-children="#portal-footer-links > ul" css:content-children="#portal-siteactions"/>
         <replace css:theme="#site-analytics" css:content="#plone-analytics"/>

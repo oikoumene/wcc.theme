@@ -124,3 +124,25 @@ div#portal-footer-links ul li {
     padding-right: 0.5em;
 }
 
+.portletSearch input[type='text'] {
+    line-height:36px;
+    height:36px;
+    border: 1px solid #ccc;
+    width:160px;
+}
+
+.portletSearch input[type='submit'] {
+    color:transparent;
+    background: url('images/btn-search-grey.png') no-repeat;
+    margin-top:1px;
+    height:38px;
+    width: 54px;
+    border:none;
+    margin-left:-5px;
+}
+
+.portletSearch .portletHeader {
+    font-weight:bold;
+}
+
+
