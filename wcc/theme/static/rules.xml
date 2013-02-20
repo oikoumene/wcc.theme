@@ -29,6 +29,7 @@
         <merge theme="/html/body" content="/html/body" attributes="class"/>
         <merge theme="/html/body" content="/html/body" attributes="dir"/>
         <replace css:theme="#portal-globalnav" css:content="#portal-globalnav"/>
+        <replace css:theme-children="#portal-footer-links > ul" css:content-children="#portal-siteactions"/>
         <replace css:theme="#site-analytics" css:content="#plone-analytics"/>
         <replace css:theme="#portal-personaltools-wrapper" 
             css:content="#portal-personaltools-wrapper"/>

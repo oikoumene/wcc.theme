@@ -115,3 +115,12 @@ div.donate-now-portlet a:visited,
 div.donate-now-portlet a:link {
     color:#fff
 }
+
+div#portal-footer-links {
+    text-align:right;
+}
+
+div#portal-footer-links ul li {
+    padding-right: 0.5em;
+}
+
