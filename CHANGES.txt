@@ -4,7 +4,10 @@ Changelog
 1.7 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- added styling override for search portlet (re #199) [izhar]
+- add favicon.ico (re #198) [izhar]
+- set base font size to 18px (re #198) [izhar]
+- added siteactions to portal footer (re #199) [izhar]
 
 
 1.6 (2013-02-11)
