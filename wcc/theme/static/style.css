@@ -149,4 +149,11 @@ div#portal-footer-links ul li {
     font-weight:bold;
 }
 
+#portlets-below .portlet {
+    width:200px;
+    margin:0 auto;
+}
 
+#portlets-below .portletHeader a {
+    font-weight:bold;
+}

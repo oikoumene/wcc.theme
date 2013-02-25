@@ -28,3 +28,6 @@ div.donate-now-portlet a {
     background: #B01 !important;
 }   
 
+#portlets-below a, #portlets-below .portletHeader {
+    color: #B01 !important;
+}
