@@ -3,7 +3,7 @@
 }
 
 a:link, a:visited {
-    color: #BB0011;
+    color: #B01;
 }
 
 a.navTreeCurrentItem, a.navTreeCurrentItem:visited {
@@ -11,18 +11,24 @@ a.navTreeCurrentItem, a.navTreeCurrentItem:visited {
 }
 
 #content a:link, dl.portlet a:link {
-    color: #BB0011;
+    color: #B01;
     border-bottom: 0.1em solid #BB0000;
 }
 
 #content a:visited, dl.portlet a:visited {
-    color: #BB0011;
+    color: #B01;
     border-bottom: 0.1em solid #BB0000;
 }
 
 #content a:hover, dl.portlet a:hover {
     color: #B01 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
+
+#portal-personaltools dd a:hover {
+    background:#B01 !important;
+    color: #FFFFFF !important;
+}
+
 
 div.donate-now-portlet a {
     background: #B01 !important;

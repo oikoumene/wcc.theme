@@ -29,6 +29,11 @@ a.navTreeCurrentItem, a.navTreeCurrentItem:visited {
     color: #FFFFFF !important;
 }
 
+#portal-personaltools dd a:hover {
+    background:#0534B6 !important;
+    color: #FFFFFF !important;
+}
+
 div.donate-now-portlet a {
     background: #0534B6 !important;
 }
