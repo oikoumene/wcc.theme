@@ -13,6 +13,7 @@
 
     <grok:grok package="." />
     <plone:static directory="static" type="theme" />
+    <include package=".browser"/>
 
     <genericsetup:registerProfile
         name="default"
