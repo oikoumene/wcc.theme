@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- This file holds the setup configuration for the portal_css tool. -->
+
+<object name="portal_css">
+
+ <stylesheet title=""
+    id="public.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+ <stylesheet title=""
+    id="portlets.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+<stylesheet title=""
+    id="drop_down.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+ 
+ <!--themed style sheets-->
+ <stylesheet title="Normalize"
+    insert-after=""
+    id="++theme++wcc.theme/css/normalize.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+ <stylesheet title="Main CSS"
+    insert-after="Normalize"
+    id="++theme++wcc.theme/css/main.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True" applyPrefix="True"
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+ <stylesheet title="Plone Enhancement CSS"
+    insert-after="Main CSS"
+    id="++theme++wcc.theme/css/enhancement.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True" applyPrefix="True"
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
+</object>
