@@ -44,6 +44,9 @@
     </rules>
     
     <replace theme-children="//article[contains(@class, 'main-page')]" content-children="//div[@id='portal-column-content']" />
-    <replace theme-children="//aside" content-children="//div[@id='portal-column-one']/* | //div[@id='portal-column-two']/*" />
-    
+    <replace theme-children="//aside">
+        <xsl:for-each css:select="#portal-column-one .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>    
 </rules><!--end main rule-->

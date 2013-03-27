@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+
+    <xsl:if test="dl[contains(@class,'portlet')]">
+        <div class="portlet-wrapper">
+            <h2 class="portlet-header">
+                <xsl:copy-of select="dl/dt[@class='portletHeader']/node()"/>
+            </h2>
+            <div class="portlet-content">
+                <xsl:for-each select="dl/dd">
+                    <xsl:copy-of select="*"/>
+                </xsl:for-each>
+            </div>
+        </div>
+    </xsl:if>
+    <xsl:if test="not(dl[contains(@class,'portlet')])">
+        <div>
+            <xsl:copy-of select="node()"/>
+        </div>
+    </xsl:if>
+
+
+</section>

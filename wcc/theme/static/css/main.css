@@ -144,6 +144,7 @@ aside.right{float: right;}
 .portlet-wrapper{
     border: 1px solid #ccc;
     padding: 10px;
+    margin-bottom:20px;
 }
 ul.navigation-portlet{
     padding: 0;
