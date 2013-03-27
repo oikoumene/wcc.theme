@@ -12,8 +12,10 @@
     <drop theme="/html/head/style | /html/head/script | /html/head/link | /html/head/title" />
     <prepend theme="/html/head" content="/html/head/base | /html/head/link | /html/head/style | /html/head/script | /html/head/meta | /html/head/title" />
     
-    <!--logo link-->
-    <copy attributes="href" content="//a[@id='portal-logo']" theme="//h1[contains(@class, 'title')]/a" />
+    <!--logo-->
+    <replace css:theme="#logo" css:content="#portal-logo > a"/>
+    <replace css:theme-children=".tagline" css:content-children="#portal-logo .logo-description"/>
+    <drop css:theme=".logo-container h1.title" attributes="class"/>
     
     <!--BODY-->
     <merge theme="/html/body" content="/html/body" attributes="class"/>
@@ -25,11 +27,15 @@
     <replace 
         css:theme-children='#portal-languageselector' 
         css:content-children='#portal-languageselector'/>
+    <replace
+        css:theme-children=".footer-link"
+        css:content-children="#portal-siteactions"/>
 
     <!--homepage-->
-    <rules if-content="//body[contains(@class, 'portaltype-wcc-homepage-homepage')]">
+    <rules css:if-content="#homepage-view">
         <theme href="index.html" />
         <replace css:theme=".focus-container" css:content="#homepage-slider"/>
+        <before css:theme=".main-page-content-container" css:content="#edit-bar"/>
         <replace css:theme-children=".news-list-container">
             <xsl:for-each css:select="#homepage-news .homepage-newsitem">
                 <div class="clearfix news-list-item">
@@ -56,6 +62,11 @@
                 </div>
             </xsl:for-each>
         </replace>
+
+    </rules>
+
+    <rules if-content="//body[contains(@class,'template-edit')] or //body[contains(@class,'template-atct_edit')]">
+        <theme href="content.html" />
     </rules>
     <!--content left-->
     <rules if-content="//div[@id='portal-column-one']">
@@ -71,7 +82,7 @@
     </rules>
     
     <replace theme-children="//article[contains(@class, 'main-page')]" content-children="//div[@id='portal-column-content']"
-        if-not-content="//body[contains(@class, 'portaltype-wcc-homepage-homepage')]"/>
+        css:if-not-content="#homepage-view"/>
     <replace theme-children="//aside" css:if-content="#portal-column-one">
         <xsl:for-each css:select="#portal-column-one .portletWrapper">
             <xi:include href="portlet-rules.xml"/>
