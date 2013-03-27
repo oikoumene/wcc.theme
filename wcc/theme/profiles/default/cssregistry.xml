@@ -13,7 +13,7 @@
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
-<stylesheet title=""
+ <stylesheet title=""
     id="drop_down.css"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
@@ -35,6 +35,13 @@
  <stylesheet title="Plone Enhancement CSS"
     insert-after="Main CSS"
     id="++theme++wcc.theme/css/enhancement.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True" applyPrefix="True"
+    enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
+ <stylesheet title="Color Scheme"
+    insert-after="++theme++wcc.theme/css/enhancement.css"
+    id="wcc-theme-scheme.css"
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True" applyPrefix="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"/>

@@ -20,7 +20,11 @@
     <merge theme="/html/body" content="/html/body" attributes="dir"/>
     
     <!--navigation-->
-    <replace theme-children='//ul[@id="portal-globalnav"]' content-children='//ul[@id="portal-globalnav"]' />
+    <replace css:theme-children='#portal-globalnav' 
+              css:content-children='#portal-globalnav' />
+    <replace 
+        css:theme-children='#portal-languageselector' 
+        css:content-children='#portal-languageselector'/>
     
     <!--homepage-->
     <rules if-content="//body[contains(@class, 'section-front-page')]">
@@ -40,6 +44,6 @@
     </rules>
     
     <replace theme-children="//article[contains(@class, 'main-page')]" content-children="//div[@id='portal-column-content']" />
-    <replace theme-children="//aside" content-children="//div[@id='portal-column-one'] | //div[@id='portal-column-two']" />
+    <replace theme-children="//aside" content-children="//div[@id='portal-column-one']/* | //div[@id='portal-column-two']/*" />
     
 </rules><!--end main rule-->
