@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/wcc/!svn/ver/6/wcc.theme/trunk/wcc/theme/static/css
+END
+normalize.css
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/wcc/!svn/ver/4/wcc.theme/trunk/wcc/theme/static/css/normalize.css
+END
+normalize.min.css
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/wcc/!svn/ver/4/wcc.theme/trunk/wcc/theme/static/css/normalize.min.css
+END
+main.css
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/wcc/!svn/ver/6/wcc.theme/trunk/wcc/theme/static/css/main.css
+END
+enhancement.css
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/wcc/!svn/ver/4/wcc.theme/trunk/wcc/theme/static/css/enhancement.css
+END
