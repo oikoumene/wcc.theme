@@ -9,4 +9,13 @@
         layer="..interfaces.IThemeSpecific"
         />
 
+    <browser:viewlet
+        name="wcc.theme.css"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+        permission="zope2.Public"
+        template="templates/schememeta.pt"
+        layer="..interfaces.IThemeSpecific"
+        />
+
+
 </configure>

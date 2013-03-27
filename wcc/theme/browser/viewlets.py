@@ -1,6 +1,7 @@
 from plone.app.layout.viewlets.common import LogoViewlet as BaseLogoViewlet
 from plone.app.layout.viewlets.common import ViewletBase
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from zope.component.hooks import getSite
 
 class LogoViewlet(BaseLogoViewlet):
 

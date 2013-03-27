@@ -8,6 +8,10 @@
     <theme href="index.html" css:if-content="#visual-portal-wrapper"/>
     <theme href="dialog.html" css:if-content="#content.dialog-wrapper"/>
     <replace css:theme="title" css:content="title"/>
+    <replace css:theme="link[name='colorscheme']" css:if-content="meta[name='wcc.colorscheme']">
+        <link rel="stylesheet"><xsl:attribute name="href"><xsl:value-of 
+                    select="//meta[@name='wcc.colorscheme']/@content"/></xsl:attribute></link>
+    </replace>
     <merge theme="/html" content="/html" attributes="lang"/>
 
     <rules css:if-content="#content.dialog-wrapper">
