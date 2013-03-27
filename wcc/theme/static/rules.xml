@@ -25,10 +25,37 @@
     <replace 
         css:theme-children='#portal-languageselector' 
         css:content-children='#portal-languageselector'/>
-    
+
     <!--homepage-->
-    <rules if-content="//body[contains(@class, 'section-front-page')]">
+    <rules if-content="//body[contains(@class, 'portaltype-wcc-homepage-homepage')]">
         <theme href="index.html" />
+        <replace css:theme=".focus-container" css:content="#homepage-slider"/>
+        <replace css:theme-children=".news-list-container">
+            <xsl:for-each css:select="#homepage-news .homepage-newsitem">
+                <div class="clearfix news-list-item">
+                    <xsl:if test="div/div/img">
+                        <div class="news-img"><xsl:copy-of select="div/div/img"/></div>
+                        <div class="news-content">
+                            <h2><xsl:copy-of select="div/div/h3/a/node()"/></h2>
+                            <p><xsl:value-of select="div/div/p/text()"/></p>
+                        </div>
+                    </xsl:if>
+                    <xsl:if test="not(div/div/img)">
+                        <h2><xsl:copy-of select="div/div/h3/a/node()"/></h2>
+                        <p><xsl:value-of select="div/div/p/text()"/></p>
+                    </xsl:if>
+                </div>
+            </xsl:for-each>
+        </replace>
+
+        <replace css:theme-children=".events-list-container">
+            <h2 class="portlet-header"><xsl:value-of select="//h2[@id='homepage-events-title']/text()"/></h2>
+            <xsl:for-each css:select=".homepage-event">
+                <div class="clearfix events-list-item">
+                    <xsl:copy-of select="p"/>
+                </div>
+            </xsl:for-each>
+        </replace>
     </rules>
     <!--content left-->
     <rules if-content="//div[@id='portal-column-one']">
@@ -43,10 +70,20 @@
         <theme href="content.html" />
     </rules>
     
-    <replace theme-children="//article[contains(@class, 'main-page')]" content-children="//div[@id='portal-column-content']" />
-    <replace theme-children="//aside">
+    <replace theme-children="//article[contains(@class, 'main-page')]" content-children="//div[@id='portal-column-content']"
+        if-not-content="//body[contains(@class, 'portaltype-wcc-homepage-homepage')]"/>
+    <replace theme-children="//aside" css:if-content="#portal-column-one">
         <xsl:for-each css:select="#portal-column-one .portletWrapper">
             <xi:include href="portlet-rules.xml"/>
         </xsl:for-each>
-    </replace>    
+    </replace>
+
+    <replace theme-children="//aside" css:if-content="#portal-column-two">
+        <xsl:for-each css:select="#portal-column-two .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
+
+
+    
 </rules><!--end main rule-->

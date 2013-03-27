@@ -13,7 +13,9 @@
             </h2>
             <div class="portlet-content">
                 <xsl:for-each select="dl/dd">
-                    <xsl:copy-of select="*"/>
+                    <div>
+                        <xsl:copy-of select="*"/>
+                    </div>
                 </xsl:for-each>
             </div>
         </div>
