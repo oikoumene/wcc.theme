@@ -241,6 +241,12 @@ ul.slider-nav li a:hover > div h2{
     margin: 0;
     padding: 0;
 }
+
+.news-list-morelink {
+    font-size:15px;
+    text-align:right;
+    font-weight:bold;
+}
 /*home - events list*/
 .events-list-container{
     width: 248px;

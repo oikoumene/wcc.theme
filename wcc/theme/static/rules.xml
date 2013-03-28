@@ -51,7 +51,11 @@
                         <p><xsl:value-of select="div/div/p/text()"/></p>
                     </xsl:if>
                 </div>
+
             </xsl:for-each>
+            <div class="clearfix news-list-morelink">
+                <xsl:copy-of css:select=".homepage-morenews > a"/>
+            </div>
         </replace>
 
         <replace css:theme-children=".events-list-container">
