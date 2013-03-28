@@ -11,7 +11,8 @@
     <!-- Drop styles in the head - these are added back by including them from Plone -->
     <drop theme="/html/head/style | /html/head/script | /html/head/link | /html/head/title" />
     <prepend theme="/html/head" content="/html/head/base | /html/head/link | /html/head/style | /html/head/script | /html/head/meta | /html/head/title" />
-    
+    <prepend css:theme=".main-wrapper" css:content="#portal-personaltools"/>
+
     <!--logo-->
     <replace css:theme="#logo" css:content="#portal-logo > a"/>
     <replace css:theme-children=".tagline" css:content-children="#portal-logo .logo-description"/>
@@ -94,6 +95,7 @@
             <xi:include href="portlet-rules.xml"/>
         </xsl:for-each>
         <xsl:copy-of css:select="#portletmanager-plone-leftcolumn"/>
+        <xsl:copy-of css:select="#portal-column-one .managePortletsLink"/>
     </replace>
 
     <replace theme-children="//aside" css:if-content="#portal-column-two">
@@ -101,6 +103,7 @@
             <xi:include href="portlet-rules.xml"/>
         </xsl:for-each>
         <xsl:copy-of css:select="#portletmanager-plone-rightcolumn"/>
+        <xsl:copy-of css:select="#portal-column-two .managePortletsLink"/>
     </replace>
     
 </rules><!--end main rule-->
