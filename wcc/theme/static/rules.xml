@@ -91,14 +91,14 @@
         <xsl:for-each css:select="#portal-column-one .portletWrapper">
             <xi:include href="portlet-rules.xml"/>
         </xsl:for-each>
+        <xsl:copy-of css:select="#portletmanager-plone-leftcolumn"/>
     </replace>
 
     <replace theme-children="//aside" css:if-content="#portal-column-two">
         <xsl:for-each css:select="#portal-column-two .portletWrapper">
             <xi:include href="portlet-rules.xml"/>
         </xsl:for-each>
+        <xsl:copy-of css:select="#portletmanager-plone-rightcolumn"/>
     </replace>
-
-
     
 </rules><!--end main rule-->
