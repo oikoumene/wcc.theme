@@ -110,5 +110,7 @@
         <xsl:copy-of css:select="#portletmanager-plone-rightcolumn"/>
         <xsl:copy-of css:select="#portal-column-two .managePortletsLink"/>
     </replace>
+
+    <after css:theme="#main" css:content="#plone-analytics"/>
     
 </rules><!--end main rule-->
