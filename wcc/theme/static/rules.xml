@@ -35,8 +35,9 @@
     <!--homepage-->
     <rules css:if-content="#homepage-view">
         <theme href="index.html" />
+        <before css:theme=".focus-container" css:content="#edit-bar"/>
         <replace css:theme=".focus-container" css:content="#homepage-slider"/>
-        <before css:theme=".main-page-content-container" css:content="#edit-bar"/>
+        <!--        <drop css:theme=".main-page.right-content" css:if-not-content="#homepage-news-events-listing"/> -->
         <replace css:theme-children=".news-list-container">
             <xsl:for-each css:select="#homepage-news .homepage-newsitem">
                 <div class="clearfix news-list-item">
@@ -69,7 +70,7 @@
                 </div>
             </xsl:for-each>
         </replace>
-
+    
     </rules>
 
     <rules if-content="//body[contains(@class,'template-edit')] or //body[contains(@class,'template-atct_edit')]">
