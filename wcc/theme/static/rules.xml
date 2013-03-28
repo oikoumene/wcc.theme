@@ -35,7 +35,11 @@
     <!--homepage-->
     <rules css:if-content="#homepage-view">
         <theme href="index.html" />
-        <before css:theme=".focus-container" css:content="#edit-bar"/>
+        <after css:theme=".focus-container">
+            <div style="margin-top:20px">
+                <xsl:copy-of css:select="#edit-bar"/>
+            </div>
+        </after>
         <replace css:theme=".focus-container" css:content="#homepage-slider"/>
         <!--        <drop css:theme=".main-page.right-content" css:if-not-content="#homepage-news-events-listing"/> -->
         <replace css:theme-children=".news-list-container">
