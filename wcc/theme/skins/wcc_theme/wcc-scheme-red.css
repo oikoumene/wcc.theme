@@ -1,1 +1,28 @@
+.top-colorstrip{
+    background: none #800000;
+}
+
+nav {
+    background: none #800000;
+}
+
+.footer-link li a:hover {
+    color: #800000;
+}
+
+a{
+    color: #800000;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #800000;
+}
+
+h2.portlet-header{
+    border-bottom: 1px solid #800000;
+}
+
+.lof-slidecontent ul.navigator-wrap-inner li.active {
+    background: url(slider-arrow-red.png) no-repeat scroll left center !important;
+}
 

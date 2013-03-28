@@ -16,9 +16,9 @@ body{
     font-size: 12px;
     font-family: verdana, helvetica, tahoma, arial, san-serif;
 }
-.top-red{
+.top-colorstrip{
     height: 15px;
-    background: none #800000;
+    background: none #205C90;
     box-shadow: 0 5px 25px #555;
     position: relative;
     z-index: 10;
@@ -50,6 +50,10 @@ body{
     width: 50%;
     float: left;
 }
+
+.logo-container {
+    padding-left:10px;
+}
 h1.title{
     margin: 0;
 }
@@ -80,7 +84,7 @@ ul.language li a:hover{
 
 /*navigation*/
 nav{
-    background: none #800000;
+    background: none #205C90;
     box-shadow: 0 5px 25px #555;
 }
 nav ul{
@@ -274,27 +278,27 @@ ul.slider-nav li a:hover > div h2{
     color: #fff;
 }
 .footer-link li a:hover{
-    color: #800000;
+    color: #205C90;
 }
 
 /*links*/
 a{
     text-decoration: none;
-    color: #800000;
+    color: #205C90;
 }
 a:hover{color: #000}
 
 /*headings*/
 h1,h2,h3,h4,h5,h6{
     font-family: Frutiger, Candara, Arial, Helvetica, sans-serif;
-    color: #800000;
+    color: #205C90;
 }
 h2{
     font-size: 24px;
     font-weight: normal;
 }
 h2.portlet-header{
-    border-bottom: 1px solid #800000;
+    border-bottom: 1px solid #205C90;
     padding-bottom: 10px;
     margin-bottom: 0;
 }
