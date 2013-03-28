@@ -47,7 +47,6 @@ body{
 }
 
 .top-right-container{
-    width:40%;
     float:right;
 }
 
@@ -76,6 +75,7 @@ ul.language{
     padding: 0;
     margin: 40px 0 0;
     list-style: none;
+    float:right;
 }
 ul.language li{float: left;}
 ul.language li a{padding: 0 10px;}

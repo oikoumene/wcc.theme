@@ -343,7 +343,7 @@ li.formTab a.notify {
     color: White;
 }
 li.formTab a.required span {
-    background-image: url(required.png);
+    background-image: url(../img/required.png);
     background-position: center right;
     background-repeat: no-repeat;
     padding-right: 1em;
@@ -683,7 +683,7 @@ input#title {
 }
 
 .fieldRequired {
-    background: url(required.png) center left no-repeat;
+    background: url(../img/required.png) center left no-repeat;
     padding: 0 0 0 1em;
     color: White;
 }
