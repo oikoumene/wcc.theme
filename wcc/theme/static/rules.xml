@@ -42,12 +42,12 @@
                     <xsl:if test="div/div/img">
                         <div class="news-img"><xsl:copy-of select="div/div/img"/></div>
                         <div class="news-content">
-                            <h2><xsl:copy-of select="div/div/h3/a/node()"/></h2>
+                            <h2><xsl:copy-of select="div/div/h3/a"/></h2>
                             <p><xsl:value-of select="div/div/p/text()"/></p>
                         </div>
                     </xsl:if>
                     <xsl:if test="not(div/div/img)">
-                        <h2><xsl:copy-of select="div/div/h3/a/node()"/></h2>
+                        <h2><xsl:copy-of select="div/div/h3/a"/></h2>
                         <p><xsl:value-of select="div/div/p/text()"/></p>
                     </xsl:if>
                 </div>
