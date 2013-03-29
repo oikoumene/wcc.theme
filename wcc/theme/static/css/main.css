@@ -305,6 +305,16 @@ h2.portlet-header{
     margin-bottom: 0;
 }
 
+/*columns*/
+.three-col-items > div{
+    width: 242px;
+    float: left;
+    margin: 0 10px;
+}
+.three-col-items > div:first-child{margin-left: 0}
+.three-col-items > div:last-child{margin-right: 0}
+.three-col-items > div p{text-align: justify}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -365,15 +375,4 @@ h2.portlet-header{
 
 .clearfix {
     *zoom: 1;
-}
-
-table.invisible {
-    /* 
-     * This is a hack to temporarily get around issue of invisible tables 
-     * that was copied over from original site 
-     *
-     * ideally a script need to go through the site and remove all 'class'
-     * attributes from table nodes
-     */
-    display:block;
 }
