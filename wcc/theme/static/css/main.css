@@ -366,3 +366,14 @@ h2.portlet-header{
 .clearfix {
     *zoom: 1;
 }
+
+table.invisible {
+    /* 
+     * This is a hack to temporarily get around issue of invisible tables 
+     * that was copied over from original site 
+     *
+     * ideally a script need to go through the site and remove all 'class'
+     * attributes from table nodes
+     */
+    display:block;
+}
