@@ -385,7 +385,7 @@ h2.portlet-header{
  */
 
 table.invisible {
-    display:block;
+    visibility:visible;
 }
 
 textarea {
