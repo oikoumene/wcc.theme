@@ -33,7 +33,18 @@
         css:content-children="#portal-siteactions"/>
 
     <!--homepage-->
-    <rules css:if-content="#homepage-view">
+
+    <rules css:if-content="#homepage-view.homepage-full-width">
+        <theme href="index-subsite.html"/>
+        <after css:theme=".focus-container">
+            <div style="margin-top:20px">
+                <xsl:copy-of css:select="#edit-bar"/>
+            </div>
+        </after>
+        <replace css:theme=".focus-container" css:content="#homepage-slider"/>
+    </rules>
+
+    <rules css:if-content="#homepage-view.homepage-normal-width">
         <theme href="index.html" />
         <after css:theme=".focus-container">
             <div style="margin-top:20px">
@@ -74,7 +85,7 @@
                 </div>
             </xsl:for-each>
         </replace>
-        <drop css:theme-children="aside.left" css:if-not-content="#portal-column-one"/> 
+
     </rules>
 
     <rules if-content="//body[contains(@class,'template-edit')] or //body[contains(@class,'template-atct_edit')]">
@@ -95,21 +106,24 @@
     
     <replace theme-children="//article[contains(@class, 'main-page')]" content-children="//div[@id='portal-column-content']"
         css:if-not-content="#homepage-view"/>
-    <replace theme-children="//aside" css:if-content="#portal-column-one">
+    <replace css:theme-children="aside.left" css:if-content="#portal-column-one">
         <xsl:for-each css:select="#portal-column-one .portletWrapper">
             <xi:include href="portlet-rules.xml"/>
         </xsl:for-each>
         <xsl:copy-of css:select="#portletmanager-plone-leftcolumn"/>
         <xsl:copy-of css:select="#portal-column-one .managePortletsLink"/>
     </replace>
+    <drop css:theme-children="aside.left" css:if-not-content="#portal-column-one"/> 
 
-    <replace theme-children="//aside" css:if-content="#portal-column-two">
+    <replace css:theme-children="aside.right" css:if-content="#portal-column-two">
         <xsl:for-each css:select="#portal-column-two .portletWrapper">
             <xi:include href="portlet-rules.xml"/>
         </xsl:for-each>
         <xsl:copy-of css:select="#portletmanager-plone-rightcolumn"/>
         <xsl:copy-of css:select="#portal-column-two .managePortletsLink"/>
     </replace>
+    <drop css:theme-children="aside.right" css:if-not-content="#portal-column-two"/> 
+
 
     <after css:theme="#main" css:content="#plone-analytics"/>
     
