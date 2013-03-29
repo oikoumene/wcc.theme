@@ -376,3 +376,14 @@ h2.portlet-header{
 .clearfix {
     *zoom: 1;
 }
+
+/*
+ * Temporary hack to make table.invisible, visible.
+ * This is due to a lot of contents which was copied over, have table with
+ * class .invisible - of which, in Typo3, it means the table have invisible
+ * borders. But in plone/wcc.theme, it means things goes display:none;
+ */
+
+table.invisible {
+    display:block;
+}
