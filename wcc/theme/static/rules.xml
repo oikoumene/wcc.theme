@@ -41,6 +41,21 @@
                 <xsl:copy-of css:select="#edit-bar"/>
             </div>
         </after>
+        <replace css:theme-children=".three-col-items">
+            <xsl:for-each css:select="#homepage-news .homepage-newsitem">
+                <div>
+                    <xsl:if test="div/div/img">
+                        <h2><xsl:copy-of select="div/div/h3/a"/></h2>
+                        <xsl:copy-of select="div/div/img"/>
+                        <p><xsl:value-of select="div/div/p/text()"/></p>
+                    </xsl:if>
+                    <xsl:if test="not(div/div/img)">
+                        <h2><xsl:copy-of select="div/div/h3/a"/></h2>
+                        <p><xsl:value-of select="div/div/p/text()"/></p>
+                    </xsl:if>
+                </div>
+            </xsl:for-each>
+        </replace>
         <replace css:theme=".focus-container" css:content="#homepage-slider"/>
     </rules>
 
@@ -114,7 +129,8 @@
         <xsl:copy-of css:select="#portal-column-one .managePortletsLink"/>
     </replace>
     <drop css:theme-children="aside.left" css:if-not-content="#portal-column-one"/> 
-
+    <!--    
+        XXX temporary until we get 2 columns template
     <replace css:theme-children="aside.right" css:if-content="#portal-column-two">
         <xsl:for-each css:select="#portal-column-two .portletWrapper">
             <xi:include href="portlet-rules.xml"/>
@@ -123,6 +139,19 @@
         <xsl:copy-of css:select="#portal-column-two .managePortletsLink"/>
     </replace>
     <drop css:theme-children="aside.right" css:if-not-content="#portal-column-two"/> 
+    -->
+
+    <!-- delete this block after we get a 2 columns template -->
+    <replace css:theme-children="aside.right" css:if-content="#portal-column-one">
+        <xsl:for-each css:select="#portal-column-one .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+        <xsl:copy-of css:select="#portletmanager-plone-leftcolumn"/>
+        <xsl:copy-of css:select="#portal-column-one .managePortletsLink"/>
+    </replace>
+    <drop css:theme-children="aside.right" css:if-not-content="#portal-column-one"/> 
+
+
 
 
     <after css:theme="#main" css:content="#plone-analytics"/>
