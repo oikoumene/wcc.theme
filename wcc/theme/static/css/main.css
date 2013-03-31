@@ -125,6 +125,11 @@ article.main-page{
     margin-bottom: 20px;
     padding: 0 10px;
 }
+article.center-content{
+    width: 498px;
+    float: left;
+    margin-left: 10px;
+}
 article.right-content{
     width: 768px;
     float: right;
