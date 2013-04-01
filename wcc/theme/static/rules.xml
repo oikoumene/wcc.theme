@@ -107,6 +107,9 @@
         <theme href="content.html" />
     </rules>
     <!--content left-->
+    <rules if-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']">
+        <theme href="center-content.html" />
+    </rules>
     <rules if-content="//div[@id='portal-column-one']">
         <theme href="right-content.html" />
     </rules>
