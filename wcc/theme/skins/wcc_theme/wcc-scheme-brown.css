@@ -26,3 +26,7 @@ h2.portlet-header{
     background: url(slider-arrow-brown.png) no-repeat scroll left center !important;
 }
 
+.donate-now-portlet a {
+    background: #574428 none;
+}
+

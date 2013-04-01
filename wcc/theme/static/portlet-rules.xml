@@ -21,10 +21,9 @@
         </div>
     </xsl:if>
     <xsl:if test="not(dl[contains(@class,'portlet')])">
-        <div>
+        <div class="portlet-wrapper">
             <xsl:copy-of select="node()"/>
         </div>
     </xsl:if>
-
 
 </section>

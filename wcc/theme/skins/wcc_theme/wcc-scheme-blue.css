@@ -25,3 +25,8 @@ h2.portlet-header{
 .lof-slidecontent ul.navigator-wrap-inner li.active {
     background: url(slider-arrow-blue.png) no-repeat scroll left center !important;
 }
+
+.donate-now-portlet a {
+    background: #0534B6 none;
+}
+
