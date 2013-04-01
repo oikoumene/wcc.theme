@@ -518,3 +518,9 @@ textarea {
 dl.actionMenu {
     margin:0px;
 }
+
+#collectivesocialbar {
+    padding:5px;
+    margin:5px;
+    border-top:1px solid #ccc;
+}

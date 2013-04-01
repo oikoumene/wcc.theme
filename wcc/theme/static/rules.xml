@@ -41,6 +41,8 @@
                 <xsl:copy-of css:select="#edit-bar"/>
             </div>
         </after>
+        <drop css:theme="article.main-page" 
+            css:if-not-content=".homepage-newsitem"/>
         <replace css:theme-children=".three-col-items">
             <xsl:for-each css:select="#homepage-news .homepage-newsitem">
                 <div>
