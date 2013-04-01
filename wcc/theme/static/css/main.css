@@ -328,6 +328,7 @@ a:hover{color: #000}
 h1,h2,h3,h4,h5,h6{
     font-family: Frutiger, Candara, Arial, Helvetica, sans-serif;
     color: #205C90;
+    font-weight: normal;
 }
 h2{
     font-size: 24px;
@@ -382,6 +383,57 @@ h2.portlet-header{
     font-size: 25px;
     text-align: center;
 }
+
+/*social portlet*/
+.social-portlet{
+    height: 32px;
+    font-family: Frutiger, Candara, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.social-portlet > div{
+    float: left;
+}
+.social-portlet .social-label{
+    width: 35%;
+    padding-top: 5px;
+}
+.social-portlet .social-icon{
+    width: 65%;
+}
+.social-portlet .social-icon a {
+    text-indent: -9999px;
+    height: 32px;
+    width: 32px;
+    display: block;
+    float: left;
+    margin: 0 2px;
+}
+.social-icon a.g-plus{
+    background: transparent url(../img/social-sprite.png) 0 0 no-repeat;
+}
+.social-icon a.facebook{
+    background: transparent url(../img/social-sprite.png) -43px 0 no-repeat;
+}
+.social-icon a.twitter{
+    background: transparent url(../img/social-sprite.png) -85px 0 no-repeat;
+}
+.social-icon a.rss{
+    background: transparent url(../img/social-sprite.png) -128px 0 no-repeat;
+}
+/*social hover*/
+.social-icon a.g-plus:hover{
+    background: transparent url(../img/social-sprite.png) 0 -37px no-repeat;
+}
+.social-icon a.facebook:hover{
+    background: transparent url(../img/social-sprite.png) -43px -37px no-repeat;
+}
+.social-icon a.twitter:hover{
+    background: transparent url(../img/social-sprite.png) -85px -37px no-repeat;
+}
+.social-icon a.rss:hover{
+    background: transparent url(../img/social-sprite.png) -128px -37px no-repeat;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
