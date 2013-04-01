@@ -1050,7 +1050,7 @@ dd.image-caption {
 
 /* @group LiveSearch */
 
-#LSResult {
+#LSResult, .LSResult {
     position: absolute;
     lrft: 0;
     background: #F9F9F9;

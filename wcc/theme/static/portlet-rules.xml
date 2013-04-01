@@ -6,7 +6,7 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
 
-    <xsl:if test="dl[contains(@class,'portlet')]">
+    <xsl:if test="dl[contains(@class,'portlet')] and not(dl[contains(@class,'portletSearch')])">
         <div class="portlet-wrapper">
             <h2 class="portlet-header">
                 <xsl:copy-of select="dl/dt[@class='portletHeader']/node()"/>
@@ -20,7 +20,14 @@
             </div>
         </div>
     </xsl:if>
-    <xsl:if test="not(dl[contains(@class,'portlet')])">
+    <xsl:if test="dl[contains(@class,'portletSearch')]">
+        <div class="portlet-wrapper">
+            <div class="search-portlet">
+                <xsl:copy-of select="dl/dd/form"/>
+            </div>
+        </div>
+    </xsl:if>
+    <xsl:if test="not(dl[contains(@class,'portlet')]) and not(dl[contains(@class,'portletSearch')])">
         <div class="portlet-wrapper">
             <xsl:copy-of select="node()"/>
         </div>
