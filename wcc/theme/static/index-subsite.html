@@ -15,7 +15,7 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body class="subsite">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -114,8 +114,16 @@
             </section>
 
             <div id="main" class="main clearfix">
-                
                 <aside class="right">
+                    <!--search-->
+                    <div class="portlet-wrapper">
+                        <form class="search-portlet">
+                            <input type="text" placeholder="Search" />
+                            <input type="submit" value="SEarch" />
+                        </form>
+                    </div>
+                    
+                    <!--quick links-->
                     <div class="portlet-wrapper">
                         <h2 class="portlet-header">Quick Links</h2>
                         <div class="portlet-content">
@@ -129,6 +137,12 @@
                                 <li><a href="">Vacancy notices</a></li>
                                 <li><a href="">Press room</a></li>
                             </ul>
+                        </div>
+                    </div>
+                    <!--donate now-->
+                    <div class="portlet-wrapper">
+                        <div class="donate-now-portlet">
+                            <a href="">DONATE NOW</a>
                         </div>
                     </div>
                 </aside>
@@ -158,7 +172,9 @@
         <div class="footer-wrapper">
             <footer class="clearfix wrapper">
                 <div class="footer-left">
-                    <p>&copy; 2013 World Council of Churches</p>
+                    <p>
+                        <a href="">&copy; 2013 World Council of Churches</a>
+                    </p>
                 </div>
                 <div class="footer-right">
                     <ul class="footer-link">
