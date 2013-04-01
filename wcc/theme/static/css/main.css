@@ -510,3 +510,11 @@ table.invisible {
 textarea {
     width:100%;
 }
+
+#edit-bar  {
+    font-size:12px;
+}
+
+dl.actionMenu {
+    margin:0px;
+}
