@@ -434,6 +434,47 @@ h2.portlet-header{
     background: transparent url(../img/social-sprite.png) -128px -37px no-repeat;
 }
 
+/*table*/
+table{width: 100%;margin-bottom: 10px;}
+td,th{
+    padding: 0.5em 1em;
+    vertical-align: top;
+}
+th{
+    background: none #205C90;
+    color: #fff;
+    font-family: Frutiger, Candara, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+tr:nth-of-type(even) { 
+    background: #F2F2F2; 
+}
+
+/*form*/
+form{font-weight: normal;}
+fieldset{
+    border: 1px solid #222;
+}
+legend{
+    font-style: italic;
+}
+input[type="text"],
+input[type="password"]{
+    border: 1px solid #000;
+    padding: 0.5em;
+}
+textarea,select{
+    border: 1px solid #000;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+    padding: 0.5em;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
