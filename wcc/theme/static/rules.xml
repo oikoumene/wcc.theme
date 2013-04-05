@@ -29,6 +29,7 @@
     <!--BODY-->
     <merge theme="/html/body" content="/html/body" attributes="class"/>
     <merge theme="/html/body" content="/html/body" attributes="dir"/>
+    <merge theme="/html/body" css:content="meta[name='wcc.subsite']" attributes="class"/>
     
     <!--navigation-->
     <replace css:theme-children='#portal-globalnav' 

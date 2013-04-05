@@ -17,5 +17,14 @@
         layer="..interfaces.IThemeSpecific"
         />
 
+    <browser:viewlet
+        name="wcc.theme.subsite"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+        class=".viewlets.SubsiteViewlet"
+        permission="zope2.Public"
+        layer="..interfaces.IThemeSpecific"
+        />
+
+
 
 </configure>

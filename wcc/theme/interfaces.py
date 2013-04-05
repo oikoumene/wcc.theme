@@ -6,5 +6,10 @@ class IThemeSettings(Interface):
             vocabulary="wcc.theme.colorscheme",
             default='red')
 
+    is_subsite = schema.Bool(
+            title=u'Is Subsite',
+            default=True
+    )
+
 class IThemeSpecific(Interface):
     pass

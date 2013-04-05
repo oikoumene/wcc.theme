@@ -1,6 +1,9 @@
 from plone.app.layout.viewlets.common import LogoViewlet as BaseLogoViewlet
 from plone.app.layout.viewlets.common import ViewletBase
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from plone.registry.interfaces import IRegistry
+from zope.component import getUtility
+from wcc.theme.interfaces import IThemeSettings
 from zope.component.hooks import getSite
 
 class LogoViewlet(BaseLogoViewlet):
@@ -25,3 +28,15 @@ class LogoViewlet(BaseLogoViewlet):
                 'description').get(navroot)
         else:
             self.navigation_root_description = u''
+
+
+class SubsiteViewlet(ViewletBase):
+
+    index = ViewPageTemplateFile('templates/subsitemeta.pt')
+
+    def available(self):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(IThemeSettings)
+        if settings.is_subsite:
+            return True
+        return False
