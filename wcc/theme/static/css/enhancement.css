@@ -752,37 +752,6 @@ tr.error {
     display: inline-block;
 }
 
-/*Application Form table*/
-	table.application-form{width:100%;text-align:left;border-color: #666;color:#000;margin-bottom: 20px;}
-	table.application-form td,table td{padding: 10px; vertical-align:middle;}
-	table.application-form thead{background: none #4B6496;color:#fff;text-transform:uppercase;font-size:18px;}
-	table.application-form td.col-one{width:25%;}
-	table.application-form td.col-one-wide{width:30%;}
-	table.application-form td.fix-width{width:15%}
-	table.application-form td table thead,
-	table.application-form td table td{background: none transparent;color:#222;text-transform:capitalize;font-size:13px;}
-	td div.formHelp{font-style:oblique;font-weight:normal;color:#4E549E;padding: 5px 0;}
-	
-	table.application-form table.listing{}
-	table.application-form table.listing th{background:none transparent}
-	table.application-form table.listing tr,
-	table.application-form table.listing tbody tr.odd{background:none transparent;/*border-bottom:1px solid #666;*/}
-	table.application-form table.listing td,
-	table.application-form table.listing tbody tr.odd td{background:none transparent} 
-	/*emiel - table for datagridwidget */
-	table.datagridwidget-table-view.listing td,
-	table.datagridwidget-table-view.listing tbody tr.odd td,
-	table.datagridwidget-table-view.listing th,
-	table.datagridwidget-table-view.listing tbody tr.odd{border: 1px solid black; }
-	table.datagridwidget-table-view.listing {table-layout: fixed;}
-        table.datagridwidget-table-view{font-size: 10px;}
-	/*joemarie - scholar form label display none*/
-	td .field{vertical-align:middle}
-	td.label-none .formQuestion{display:none;}
-	td.label-none .fieldErrorBox{color: #f00}
-	td.label{font-size:14px;font-weight:bold;color:#000;padding:5px 0;}	
-	th .field{margin-bottom: 0;}
-
 /* @group Login form */
 
 body.template-logged_out #content,
