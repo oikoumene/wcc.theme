@@ -51,6 +51,7 @@ body.subsite{
 
 .top-right-container{
     float:right;
+    margin-right: 10px;
 }
 
 .logo-container {
@@ -76,12 +77,12 @@ h1.title a{
 /*language*/
 ul.language{
     padding: 0;
-    margin: 40px 0 0;
+    margin: 40px 0 15px 0;
     list-style: none;
-    float:right;
 }
 ul.language li{float: left;}
 ul.language li a{padding: 0 10px;}
+ul.language li:last-child > a{padding-right: 0}
 ul.language li.selected a,
 ul.language li a:hover{
     color: #000;
@@ -350,7 +351,10 @@ h2.portlet-header{
 .three-col-items > div:last-child{margin-right: 0}
 .three-col-items > div p{text-align: justify}
 
-/*search portlet*/
+/*search*/
+.search-container{
+    height: 40px;
+}
 .search-portlet{
     width: 100%;
     position: relative;
@@ -385,6 +389,12 @@ h2.portlet-header{
 }
 
 /*social portlet*/
+.social-container{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom:20px;
+    width: 222px;
+}
 .social-portlet{
     height: 32px;
     font-family: Frutiger, Candara, Arial, Helvetica, sans-serif;
@@ -452,7 +462,7 @@ tr:nth-of-type(even) {
 }
 
 /*form*/
-form{font-weight: normal;}
+form{font-weight: normal;margin-bottom: 10px;}
 fieldset{
     border: 1px solid #222;
 }
