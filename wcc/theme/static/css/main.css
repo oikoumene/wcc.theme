@@ -575,3 +575,9 @@ dl.actionMenu {
     margin:5px;
     border-top:1px solid #ccc;
 }
+
+#portal-personaltools {
+    z-index: 100;
+    position: absolute;
+    right: 170px;
+}

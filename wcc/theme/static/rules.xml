@@ -17,7 +17,15 @@
     <replace css:theme="#logo" css:content="#portal-logo > a"/>
     <replace css:theme-children=".tagline" css:content-children="#portal-logo .logo-description"/>
     <drop css:theme=".logo-container h1.title" attributes="class"/>
-    
+
+    <!-- search -->
+    <replace css:theme-children=".top-right-container .search-container">
+        <form class="search-portlet"><xsl:attribute name="action">
+            <xsl:value-of select="//*[@id='portal-searchbox']/form/@action"/></xsl:attribute>
+            <xsl:copy-of css:select="#portal-searchbox input[name='SearchableText']"/>
+            <xsl:copy-of css:select="#portal-searchbox input.searchButton"/>
+        </form>
+    </replace>
     <!--BODY-->
     <merge theme="/html/body" content="/html/body" attributes="class"/>
     <merge theme="/html/body" content="/html/body" attributes="dir"/>
