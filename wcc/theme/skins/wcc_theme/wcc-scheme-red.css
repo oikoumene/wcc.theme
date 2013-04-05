@@ -29,3 +29,8 @@ h2.portlet-header{
 .donate-now-portlet a {
     background: #800000 none;
 }
+
+th{
+    background-color: #800000;
+}   
+
