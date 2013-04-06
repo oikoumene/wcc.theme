@@ -6,7 +6,11 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
 
-    <xsl:if test="dl[contains(@class,'portlet')] and not(dl[contains(@class,'portletSearch')]) and not(dl[contains(@class,'portletWCCSocialConnectPortlet')])">
+    <xsl:if 
+        test="dl[contains(@class,'portlet')] and 
+              not(dl[contains(@class,'portletSearch')]) and 
+              not(dl[contains(@class,'portletWCCSocialConnectPortlet')]) and 
+              not(dl[contains(@class,'portletWCCDonationLinkPortlet')])">
         <div class="portlet-wrapper">
             <h2 class="portlet-header">
                 <xsl:copy-of select="dl/dt[@class='portletHeader']/node()"/>
@@ -27,6 +31,7 @@
             </div>
         </div>
     </xsl:if>
+
     <xsl:if test="dl[contains(@class,'portletWCCSocialConnectPortlet')]">
         <div class="portlet-wrapper">
             <div class="social-portlet">
@@ -38,6 +43,11 @@
                 <a class="rss"><xsl:attribute name="href"><xsl:value-of select="dl/dd/a[contains(@class,'social-rss')]/@href"/></xsl:attribute></a>
             </div>
             </div>
+        </div>
+    </xsl:if>
+    <xsl:if test="dl[contains(@class,'portletWCCDonationLinkPortlet')]">
+        <div class="donation-portlet">
+            <xsl:copy-of select="dl/dd/*"/>
         </div>
     </xsl:if>
     <xsl:if test="not(dl[contains(@class,'portlet')])">
