@@ -34,6 +34,7 @@ th{
     background-color: #46812B;
 }   
 
+body.subsite footer a:hover,
 footer a:hover {
     color: #46812B;
 }   
