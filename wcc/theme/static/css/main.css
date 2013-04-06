@@ -433,16 +433,16 @@ h2.portlet-header{
     background: transparent url(../img/social-sprite.png) -128px 0 no-repeat;
 }
 /*social hover*/
-.social-icon a.g-plus:hover{
+.social-icon a.g-plus:hover {
     background: transparent url(../img/social-sprite.png) 0 -37px no-repeat;
 }
-.social-icon a.facebook:hover{
+.social-icon a.facebook:hover {
     background: transparent url(../img/social-sprite.png) -43px -37px no-repeat;
 }
-.social-icon a.twitter:hover{
+.social-icon a.twitter:hover {
     background: transparent url(../img/social-sprite.png) -85px -37px no-repeat;
 }
-.social-icon a.rss:hover{
+.social-icon a.rss:hover {
     background: transparent url(../img/social-sprite.png) -128px -37px no-repeat;
 }
 
@@ -461,6 +461,10 @@ th{
 }
 tr:nth-of-type(even) { 
     background: #F2F2F2; 
+}
+
+th h1, th h2, th h3, th h4, th h5 {
+    color: #fff;
 }
 
 /*form*/
