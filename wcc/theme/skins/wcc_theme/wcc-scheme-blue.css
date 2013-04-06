@@ -33,3 +33,7 @@ h2.portlet-header{
 th{
     background-color: #0534B6;
 }
+
+footer a:hover {
+    color: #0534B6;
+}

@@ -313,8 +313,8 @@ body.subsite .footer-left a{
     display: block;
     background: url(../img/wcclogo.gif) 0 0 no-repeat transparent;
 }
-body.subsite footer a:hover,
-footer a:hover{
+
+footer a:hover {
     color: #205C90;
 }
 
