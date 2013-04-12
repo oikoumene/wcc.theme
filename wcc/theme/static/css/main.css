@@ -129,28 +129,32 @@ section.mini-page{
     padding: 0 10px;
 }
 article.main-page{
-    border: 1px solid #ccc;
     margin-bottom: 20px;
-    padding: 0 10px;
+    padding:0;
 }
 article.center-content{
-    width: 498px;
+    width: 520px;
     float: left;
     margin-left: 10px;
 }
 article.right-content{
-    width: 768px;
+    width: 790px;
     float: right;
     margin-right: 10px;
 }
 article.left-content{
-    width: 768px;
+    width: 790px;
     float: left;
     margin-left: 10px;
 }
 article.content{
     margin-right: 10px;
     margin-left: 10px;
+}
+.main-page-content-container{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 /*aside*/
 aside{
@@ -393,7 +397,7 @@ h2.portlet-header{
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom:20px;
-    width: 222px;
+    width: 332px;
 }
 .social-portlet{
     height: 32px;
@@ -404,11 +408,11 @@ h2.portlet-header{
     float: left;
 }
 .social-portlet .social-label{
-    width: 35%;
+    width: 28%;
     padding-top: 5px;
 }
 .social-portlet .social-icon{
-    width: 65%;
+    width: 72%;
 }
 .social-portlet .social-icon a {
     text-indent: -9999px;
@@ -418,6 +422,15 @@ h2.portlet-header{
     float: left;
     margin: 0 2px;
 }
+.social-icon a.news-letter{
+    text-indent: -9999px;
+    height: 32px;
+    width: 127px !important;
+    display: block;
+    float: left;
+    margin: 0 2px;
+    background: transparent url(../img/social-sprite.png) -168px 0 no-repeat;
+}
 .social-icon a.g-plus{
     background: transparent url(../img/social-sprite.png) 0 0 no-repeat;
 }
@@ -426,6 +439,12 @@ h2.portlet-header{
 }
 .social-icon a.twitter{
     background: transparent url(../img/social-sprite.png) -85px 0 no-repeat;
+}
+.social-icon a.rss{
+    background: transparent url(../img/social-sprite.png) -128px 0 no-repeat;
+}
+.social-icon a.rss{
+    background: transparent url(../img/social-sprite.png) -128px 0 no-repeat;
 }
 .social-icon a.rss{
     background: transparent url(../img/social-sprite.png) -128px 0 no-repeat;
@@ -443,6 +462,7 @@ h2.portlet-header{
 .social-icon a.rss:hover{
     background: transparent url(../img/social-sprite.png) -128px -37px no-repeat;
 }
+.social-icon a.news-letter:hover{background: transparent url(../img/social-sprite.png) -168px -37px no-repeat}
 
 /*table*/
 table{width: 100%;margin-bottom: 10px;}
