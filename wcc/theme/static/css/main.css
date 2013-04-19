@@ -377,10 +377,10 @@ h2.portlet-header{
     height: 40px;
     width: 40px;
     position: absolute;
-    top: 9px;
-    right: -9px;
+    top: 0;
+    right: 0;
     border: none;
-    background: url(../img/button-search.jpg) no-repeat 0 0 transparent;
+    background: url(../img/button-search.png) no-repeat center center transparent;
     padding: 10px;
     cursor: pointer;
     overflow: hidden;
