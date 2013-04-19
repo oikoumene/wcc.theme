@@ -362,6 +362,7 @@ h2.portlet-header{
 /*search*/
 .search-container{
     height: 40px;
+    width: 308px;
 }
 .search-portlet{
     width: 100%;
