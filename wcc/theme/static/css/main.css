@@ -129,28 +129,32 @@ section.mini-page{
     padding: 0 10px;
 }
 article.main-page{
-    border: 1px solid #ccc;
     margin-bottom: 20px;
-    padding: 0 10px;
+    padding:0;
 }
 article.center-content{
-    width: 498px;
+    width: 520px;
     float: left;
     margin-left: 10px;
 }
 article.right-content{
-    width: 768px;
+    width: 790px;
     float: right;
     margin-right: 10px;
 }
 article.left-content{
-    width: 768px;
+    width: 790px;
     float: left;
     margin-left: 10px;
 }
 article.content{
     margin-right: 10px;
     margin-left: 10px;
+}
+.main-page-content-container{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 /*aside*/
 aside{
@@ -333,14 +337,18 @@ h1,h2,h3,h4,h5,h6{
     font-weight: normal;
 }
 h2{
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 1.9em;
 }
+h3{font-size: 1.6em}
+h4{font-size: 1.4em; font-weight: bold}
+h5{font-size: 1.3em; font-weight: bold}
+h6{font-size: 1.2em; font-weight: bold}
 h2.portlet-header{
     border-bottom: 1px solid #205C90;
     padding-bottom: 10px;
     margin-bottom: 0;
 }
+
 
 /*columns*/
 .three-col-items > div{
@@ -355,6 +363,7 @@ h2.portlet-header{
 /*search*/
 .search-container{
     height: 40px;
+    width: 308px;
 }
 .search-portlet{
     width: 100%;
@@ -369,10 +378,10 @@ h2.portlet-header{
     height: 40px;
     width: 40px;
     position: absolute;
-    top: 9px;
-    right: -9px;
+    top: 0;
+    right: 0;
     border: none;
-    background: url(../img/button-search.jpg) no-repeat 0 0 transparent;
+    background: url(../img/button-search.png) no-repeat center center transparent;
     padding: 10px;
     cursor: pointer;
     overflow: hidden;
@@ -395,7 +404,7 @@ h2.portlet-header{
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom:20px;
-    width: 222px;
+    width: 332px;
 }
 .social-portlet{
     height: 32px;
@@ -406,11 +415,11 @@ h2.portlet-header{
     float: left;
 }
 .social-portlet .social-label{
-    width: 35%;
+    width: 28%;
     padding-top: 5px;
 }
 .social-portlet .social-icon{
-    width: 65%;
+    width: 72%;
 }
 .social-portlet .social-icon a {
     text-indent: -9999px;
@@ -420,6 +429,15 @@ h2.portlet-header{
     float: left;
     margin: 0 2px;
 }
+.social-icon a.news-letter{
+    text-indent: -9999px;
+    height: 32px;
+    width: 127px !important;
+    display: block;
+    float: left;
+    margin: 0 2px;
+    background: transparent url(../img/social-sprite.png) -168px 0 no-repeat;
+}
 .social-icon a.g-plus{
     background: transparent url(../img/social-sprite.png) 0 0 no-repeat;
 }
@@ -428,6 +446,12 @@ h2.portlet-header{
 }
 .social-icon a.twitter{
     background: transparent url(../img/social-sprite.png) -85px 0 no-repeat;
+}
+.social-icon a.rss{
+    background: transparent url(../img/social-sprite.png) -128px 0 no-repeat;
+}
+.social-icon a.rss{
+    background: transparent url(../img/social-sprite.png) -128px 0 no-repeat;
 }
 .social-icon a.rss{
     background: transparent url(../img/social-sprite.png) -128px 0 no-repeat;
@@ -445,6 +469,7 @@ h2.portlet-header{
 .social-icon a.rss:hover {
     background: transparent url(../img/social-sprite.png) -128px -37px no-repeat;
 }
+.social-icon a.news-letter:hover{background: transparent url(../img/social-sprite.png) -168px -37px no-repeat}
 
 /*table*/
 table{width: 100%;margin-bottom: 10px;}
