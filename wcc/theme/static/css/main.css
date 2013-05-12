@@ -616,3 +616,7 @@ dl.actionMenu {
 .main-page-content-container h3 {
     margin: 0;
 }
+
+#content .documentDescription {  
+    display: none !important;
+}
