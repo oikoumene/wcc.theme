@@ -7,6 +7,8 @@
       i18n:domain="plone">
 <body>
 
+    <metal:content-description fill-slot="content-description">
+    </metal:content-description>
 <metal:content-core fill-slot="content-core">
     <metal:block define-macro="content-core"
           tal:define="kssClassesView context/@@kss_field_decorator_view;
@@ -30,6 +32,8 @@
             </p>
         </div>
 
+        <p tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime"
+            tal:content="python:toLocalizedTime(context.Date())"></p>
         <p tal:define="is_editable context/@@plone_context_state/is_editable"
            tal:condition="python: not len_text and is_editable"
            i18n:translate="no_body_text"
