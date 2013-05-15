@@ -5,6 +5,7 @@ from plone.registry.interfaces import IRegistry
 from zope.component import getUtility
 from wcc.theme.interfaces import IThemeSettings
 from zope.component.hooks import getSite
+from wcc.theme import getSettings
 
 class LogoViewlet(BaseLogoViewlet):
 
@@ -29,14 +30,17 @@ class LogoViewlet(BaseLogoViewlet):
         else:
             self.navigation_root_description = u''
 
+        settings = getSettings()
+        if settings.logo_url.strip():
+            self.navigation_root_url = settings.logo_url
+
 
 class SubsiteViewlet(ViewletBase):
 
     index = ViewPageTemplateFile('templates/subsitemeta.pt')
 
     def available(self):
-        registry = getUtility(IRegistry)
-        settings = registry.forInterface(IThemeSettings)
+        settings = getSettings()
         if settings.is_subsite:
             return True
         return False

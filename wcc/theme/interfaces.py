@@ -11,5 +11,11 @@ class IThemeSettings(Interface):
             default=True
     )
 
+    logo_url = schema.TextLine(
+        title=u'URL the logo should link to',
+        description=u'Leave empty to use default',
+        default=u''
+    )
+
 class IThemeSpecific(Interface):
     pass
