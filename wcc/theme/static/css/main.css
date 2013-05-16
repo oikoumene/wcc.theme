@@ -609,8 +609,8 @@ dl.actionMenu {
 
 #portal-personaltools {
     z-index: 100;
-    position: absolute;
-    right: 170px;
+    position: relative;
+    right: 0;
 }
 
 .main-page-content-container h3 {
