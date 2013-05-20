@@ -32,8 +32,14 @@
             </p>
         </div>
 
-        <p tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime"
-            tal:content="python:toLocalizedTime(context.Date())"></p>
+        <tal:block tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime"
+            i18n:domain="wcc.theme">
+            <p><b tal:content="python:toLocalizedTime(context.Date())"></b></p>
+            <p tal:condition="context/translation_date|nothing">
+                <i i18n:translate="translation_version_published_on">English version published on:</i>
+                <span tal:content="python:toLocalizedTime(context/translation_date)"></span>
+            </p>
+        </tal:block>
         <p tal:define="is_editable context/@@plone_context_state/is_editable"
            tal:condition="python: not len_text and is_editable"
            i18n:translate="no_body_text"
