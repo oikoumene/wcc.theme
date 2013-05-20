@@ -9,12 +9,13 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="wcc.theme">
 
+    <i18n:registerTranslations directory="locales" />
     <includeDependencies package="." />
 
     <grok:grok package="." />
     <plone:static directory="static" type="theme" />
     <include package=".browser"/>
-    <i18n:registerTranslations directory="locales" />
+
 
     <genericsetup:registerProfile
         name="default"

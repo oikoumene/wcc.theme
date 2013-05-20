@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-05-20 00:49+0000\n"
+"POT-Creation-Date: 2013-05-20 01:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: wcc.theme\n"
 
-#. Default: "English version published on:"
+#. Default: "Translation published on:"
 #: ./skins/wcc_theme/newsitem_view.pt:39
-msgid "translation_version_published_on"
+msgid "trans_published_on"
 msgstr ""
 
