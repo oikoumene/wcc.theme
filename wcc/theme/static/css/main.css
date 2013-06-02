@@ -620,3 +620,16 @@ dl.actionMenu {
 #content .documentDescription {  
     display: none !important;
 }
+
+#search-results-bar > span, #search-results-bar > dl {
+    float:left;
+}
+
+#search-results-bar .actionMenuContent {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+#searchResultsSort {
+    float:right !important;
+}
