@@ -6,6 +6,7 @@ from zope.component import getUtility
 from wcc.theme.interfaces import IThemeSettings
 from zope.component.hooks import getSite
 from wcc.theme import getSettings
+from datetime import datetime
 
 class LogoViewlet(BaseLogoViewlet):
 
@@ -44,3 +45,10 @@ class SubsiteViewlet(ViewletBase):
         if settings.is_subsite:
             return True
         return False
+
+
+class CopyrightViewlet(ViewletBase):
+    index = ViewPageTemplateFile('templates/copyright.pt')
+
+    def year(self):
+        return datetime.now().year

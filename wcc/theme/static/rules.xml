@@ -153,5 +153,6 @@
     <drop css:theme-children="aside.right" css:if-not-content="#portal-column-two"/> 
 
     <after css:theme="#main" css:content="#plone-analytics"/>
+    <replace css:theme-children="#wcc-copyright" css:content-children="#wcc-copyright"/>
     
 </rules><!--end main rule-->

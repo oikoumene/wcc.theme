@@ -25,6 +25,12 @@
         layer="..interfaces.IThemeSpecific"
         />
 
-
+    <browser:viewlet
+        name="wcc.theme.subsite"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        class=".viewlets.CopyrightViewlet"
+        permission="zope2.Public"
+        layer="..interfaces.IThemeSpecific"
+        />
 
 </configure>
