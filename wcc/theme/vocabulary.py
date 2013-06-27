@@ -10,6 +10,7 @@ SCHEMES_CSS={
     'red': 'wcc-scheme-red.css',
     'blue': 'wcc-scheme-blue.css',
     'darkgreen': 'wcc-scheme-darkgreen.css',
+    'darkgreen2': 'wcc-scheme-darkgreen2.css',
     'brown': 'wcc-scheme-brown.css'
 }
 
