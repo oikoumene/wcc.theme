@@ -26,7 +26,7 @@
         />
 
     <browser:viewlet
-        name="wcc.theme.subsite"
+        name="wcc.theme.copyright"
         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
         class=".viewlets.CopyrightViewlet"
         permission="zope2.Public"
