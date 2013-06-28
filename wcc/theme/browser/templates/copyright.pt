@@ -1,0 +1,9 @@
+<div id="wcc-copyright">
+    <a href="http://www.oikoumene.org">
+        &copy;
+    <span tal:content="view/year"></span>
+    <span i18n:domain="wcc.theme" i18n:translate="world_council_of_churches">
+        World Council of Churches
+    </span>
+    </a>
+</div>
