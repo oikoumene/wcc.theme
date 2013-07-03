@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.38 (unreleased)
+1.38 (2013-07-03)
 -----------------
 
 - Nothing changed yet.
