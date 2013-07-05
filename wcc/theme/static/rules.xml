@@ -114,6 +114,18 @@
 
     </rules>
 
+    <rules css:if-content="#homepage3-view">
+        <theme href="index.html"/>
+        <after css:theme=".focus-container">
+            <div style="margin-top:20px">
+                <xsl:copy-of css:select="#edit-bar"/>
+            </div>
+        </after>
+        <replace css:theme=".focus-container" css:content="#homepage-slider"/>
+        <replace css:theme-children=".main-page.right-content" css:content="#homepage3-newsblock"/>
+        <after css:theme=".main-page.right-content" css:content="#viewlet-below-content"/>
+    </rules>
+
     <rules if-content="//body[contains(@class,'template-edit')] or //body[contains(@class,'template-atct_edit')]">
         <theme href="content.html" />
     </rules>
