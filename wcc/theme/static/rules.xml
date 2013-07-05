@@ -132,9 +132,15 @@
     <rules if-not-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']">
         <theme href="content.html" />
     </rules>
+
+    <rules css:if-content="#homepage2-view">
+        <before css:theme="#main" css:content="#wcc-homepage-homepage2slider"/>
+    </rules>
     
     <replace theme-children="//article[contains(@class, 'main-page')]" content-children="//div[@id='portal-column-content']"
         css:if-not-content="#homepage-view"/>
+
+    <before css:theme="#main" css:content="#portlets-in-header"/>
     <replace css:theme-children="aside.left" css:if-content="#portal-column-one">
         <xsl:for-each css:select="#portal-column-one .portletWrapper">
             <xi:include href="portlet-rules.xml"/>
