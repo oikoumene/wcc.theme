@@ -633,3 +633,8 @@ dl.actionMenu {
 #searchResultsSort {
     float:right !important;
 }
+
+.homepage3-morenews {
+    text-align:right;
+    margin-right:20px;
+}

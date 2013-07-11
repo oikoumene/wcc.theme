@@ -67,6 +67,11 @@
                 </div>
             </xsl:for-each>
         </replace>
+        <after css:theme=".three-col-items">
+            <div class="clearfix news-list-morelink">
+                <xsl:copy-of css:select=".homepage-morenews > a"/>
+            </div>
+        </after>
         <replace css:theme=".focus-container" css:content="#homepage-slider"/>
     </rules>
 
@@ -124,6 +129,7 @@
         <replace css:theme=".focus-container" css:content="#homepage-slider"/>
         <replace css:theme-children=".main-page.right-content" css:content="#homepage3-newsblock"/>
         <after css:theme=".main-page.right-content" css:content="#viewlet-below-content"/>
+        <after css:theme-children=".main-page.right-content" css:content=".homepage3-morenews"/>
     </rules>
 
     <rules if-content="//body[contains(@class,'template-edit')] or //body[contains(@class,'template-atct_edit')]">
