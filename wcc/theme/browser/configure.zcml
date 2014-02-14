@@ -33,4 +33,6 @@
         layer="..interfaces.IThemeSpecific"
         />
 
+    <adapter name="wcc_event_renderer" factory=".portlets.WCCEventRenderer"/>
+
 </configure>

@@ -1309,6 +1309,19 @@ div.overlay .formControls a {
 .visualClear {
     clear: both;
 }
+.tile.WCCEvent{
+    margin-bottom:20px;
+    margin-top:15px;
+    display:block;
+}
+.tile.WCCEvent .portletItemDetails{
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+}
+.WCCEvent-header {
+    margin-bottom: 20px;
+}
 
 /* @end */
 
