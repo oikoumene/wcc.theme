@@ -910,13 +910,13 @@ input.searchPage {
 
 /* @group Navigation portlet */
 
-dl.portlet ul.navTree li a {
+div.portlet-content ul.navTree li a {
     border: none;
     display: block;
     zoom: 1;
 }
 
-dl.portlet ul.navTree li a:hover {
+div.portlet-content ul.navTree li a:hover {
 
 }
 
@@ -924,18 +924,17 @@ dl.portletNavigationTree dd.portletItem {
     padding: 0 !important;
 }
 
-dl.portlet ul.navTreeLevel0 > .navTreeItem {
+div.portlet-content ul.navTreeLevel0 > .navTreeItem {
     padding: 0.25em 1em;
-    border-bottom: 0.1em dotted #ddd;
-    line-height: 2em;
+    line-height: 1em;
 }
 
-dl.portlet ul.navTreeLevel1 .navTreeItem {
+div.portlet-content ul.navTreeLevel1 .navTreeItem {
     padding-left: 0.5em;
     line-height: 2em;
 }
 
-dl.portlet ul.navTree .navTreeCurrentItem {
+div.portlet-content ul.navTree .navTreeCurrentItem {
     background-color: #ddd;
     border-left: 1em solid #ddd;
     margin-left: -1em;
