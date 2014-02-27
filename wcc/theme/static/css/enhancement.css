@@ -925,20 +925,14 @@ dl.portletNavigationTree dd.portletItem {
 }
 
 div.portlet-content ul.navTreeLevel0 > .navTreeItem {
-    padding: 0.25em 1em;
-    line-height: 1em;
-}
-
-div.portlet-content ul.navTreeLevel1 .navTreeItem {
-    padding-left: 0.5em;
-    line-height: 2em;
+    margin: 15px 0;
+    display: block;
 }
 
 div.portlet-content ul.navTree .navTreeCurrentItem {
     background-color: #ddd;
     border-left: 1em solid #ddd;
     margin-left: -1em;
-    margin-right: -1em;
 }
 
 /* @end */
