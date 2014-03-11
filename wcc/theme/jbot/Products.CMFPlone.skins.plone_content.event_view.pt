@@ -52,7 +52,7 @@
                             <tal:sameday tal:condition="python:context.start().Date() == context.end().Date()"
                                          tal:define="ampm
                                          python:site_properties.getProperty('localLongTimeFormat').find('%p') >= 0"
-                                         i18n:translate="event_when_sameday">
+                                         i18n:translate="">
                                 <span tal:replace="python:toLocalizedTime(context.start())"
                                       i18n:name="date">
                                     Start Date Time</span>
