@@ -656,3 +656,9 @@ dl.actionMenu {
 .homepage3-morenews {
     text-align:right;
 }
+
+#main .homepage4 {
+    width: 790px;
+    float: right;
+}
+
