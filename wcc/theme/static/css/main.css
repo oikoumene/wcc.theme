@@ -662,3 +662,7 @@ dl.actionMenu {
     float: right;
 }
 
+.books-top-3 li {
+    display: block;
+    
+}
