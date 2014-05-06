@@ -666,3 +666,9 @@ dl.actionMenu {
     display: block;
     
 }
+#portal-languageselector .language-ko {
+    display: none;
+}
+#portal-languageselector .language-pt {
+    display: none;
+}
