@@ -700,6 +700,8 @@ input#title {
 .formHelp {
     color: #555;
     margin: 0 0 0.2em 0;
+    display: block;
+    font-size: 12px;
 }
 div.field.error {
     background-color: #fdc;
