@@ -672,3 +672,11 @@ dl.actionMenu {
 #portal-languageselector .language-pt {
     display: none;
 }
+.prayercycle-copyright {
+    text-align: right;
+    font-size: 11px;
+}
+
+.prayercycle-copyright-text {
+    font-size: 11px;
+}
