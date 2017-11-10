@@ -15,7 +15,7 @@
                                     toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
 
         <div class="eventDetails vcard">
-            <h2 i18n:translate="summary_event_details">Event details</h2> glenn
+            <h2 i18n:translate="summary_event_details">Event details</h2> 
                         <div class="eventDetail">
                         <h3 i18n:translate="event_when">When</h3>
                         <div tal:define="item_start context/start|nothing;
